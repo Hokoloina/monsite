@@ -76,4 +76,40 @@ footer p {
     align-items: center;
     
 }
+section {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    color: #1a1a1a;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 40%;
+}
+
+.image {
+    position: fixed;
+    background: var(--primary-color);
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    height: 600px;
+    border-top-left-radius: 100%;
+  }
+  .imagenosybe {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .imagenosybe img {
+    width: 90%;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .imagenosybe img:hover {
+    transform: scale(0.75);
+  }
+
 
