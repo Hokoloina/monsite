@@ -1,7 +1,13 @@
-body {}
+
+body{
+    font-family: "Outfit", sans-serif;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 header {
-
+    padding: 0;
+    margin: 0;
     background-color: #516375;
     color: white;
     padding: 2px;
@@ -36,5 +42,38 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
+    padding: 12px 24px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background-color: #516375;
+    border-radius: 8px;
+    border-style:solid;
+    
 
 }
+
+.nav ul li a:hover {
+    background-color: white;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    color:#516375;
+    margin-bottom: 10px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1em;
+    color: #516375;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
