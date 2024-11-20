@@ -18,32 +18,38 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
+        <script src="https://kit.fontawesome.com/8766e65cde.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <h1 class="lobster-two-bold">Bienvenue à Madagascar</h1>
+        <h1 class="lobster-two-bold">Bienvenue à <span class="mada">Mada</span><span class="gascar">gascar</span></h1>
         <nav>
             <ul>
                 <li><a href="lieux-incontournables.html" class="button">Lieux Incontournables</a></li>
-                <li><a href="section2" class="button">Cuture et Traditions</a></li>
-                <li><a href="section3" class="button">Activités et aventures</a></li>
+                <li><a href="aventures-et-activites.html" class="button">Activités et aventures</a></li>
+                <li><a href="a-propos.html" class="button">À Propos</a></li>
+                <li><a href="contact.html" title="Contact"><span class="fa-solid fa-envelope fa-2xl"></span></a></li>
             </ul>
         </nav>
     </header>
-    <section>
-        <p> Madagascar est une île unique avec une biodiversité exceptionnelle et des paysages à couper le
-            souffle.Découvrez les lieux incontournables, la culture riche, et les activités passionnantes que cette
-            destination a à offrir.</p>
-    </section>
-    <div>
-        <img src="nosybe.avif" alt="Nosy Be" class="Nosy-be-zoom">
-    </div>
-    <footer class="contact">
-        <h2>Contactez-nous</h2>
-        <p>Email: jaimevoyagermada@gmail.com</p>
-        <p>Téléphone: +261 34 41 092 10</p>
-    </footer>
+    <main>
+        <section class="intro">
+            <p>Madagascar est une île unique avec une biodiversité exceptionnelle et des paysages à couper le souffle.
+                Découvrez les lieux incontournables, la culture riche et les activités passionnantes que cette
+                destination a à offrir.</p>
+            <img src="madagascarcarte.png" alt="Carte de Madagascar" class="cartemada">
+        </section>
+
+        <section class="gallery">
+            <div class="images-container">
+                <a href="lieux-incontournables.html" class="image-link"><img src="nosybe.avif" alt="Paysage 1"
+                        class="circular-img"></a>
+                <a href="aventures-et-activites.html" class="image-link"><img src="baobab.jpg" alt="Paysage 3"
+                        class="circular-img"></a>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
