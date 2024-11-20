@@ -7,7 +7,7 @@ body {
     margin: 0;
 }
 
-body::before{
+body::before {
     content: '';
     position: absolute;
     top: 0;
@@ -21,6 +21,7 @@ body::before{
     opacity: 0.3;
     z-index: -1;
 }
+
 header {
     padding: 0;
     margin: 0;
@@ -33,12 +34,14 @@ header {
 
 }
 
-.mada{
+.mada {
     color: #ff0000;
 }
-.gascar{
+
+.gascar {
     color: #008d15;
 }
+
 .lobster-two-bold {
     font-family: "Lobster Two", sans-serif;
     font-weight: 700;
@@ -47,9 +50,11 @@ header {
     color: #516375;
     padding-left: 2%;
 }
+
 nav {
     padding-right: 5%;
 }
+
 nav ul {
     display: flex;
     list-style: none;
@@ -57,14 +62,17 @@ nav ul {
     margin: 0;
     gap: 15px;
 }
+
 ul li a {
     color: var(--loader-color);
     text-decoration: none;
-    transition: 0.3s;}
+    transition: 0.3s;
+}
 
-nav ul li:last-child a:hover{
+nav ul li:last-child a:hover {
     color: rgb(134, 155, 167);
-  }
+}
+
 .button {
     color: white;
     text-decoration: none;
@@ -76,7 +84,7 @@ nav ul li:last-child a:hover{
     font-style: normal;
     background-color: #516375;
     border-radius: 8px;
-    border-style: solid;
+    border-style: none;
     transition: 0.3s ease;
 
 }
@@ -85,15 +93,16 @@ nav ul li:last-child a:hover{
 .button:hover {
     background-color: white;
     color: #516375;
-    border-style: none;
+    border-style: solid;
 }
-.contact{
+
+.contact {
     display: flex;
     direction: column;
-    justify-content:space-between;
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     margin-right: 30%;
-    
+
 }
 
 footer h2 {
@@ -116,7 +125,8 @@ footer p {
     padding: 20px;
     flex-wrap: wrap;
 }
-.intro p{
+
+.intro p {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
@@ -127,21 +137,25 @@ footer p {
     max-width: 50%;
     line-height: 1.6;
 }
+
 .cartemada {
     width: 180px;
     height: auto;
     border-radius: 20px 0 0 0;
     transition: transform 0.3s ease;
-    padding-right: 5%;
+    padding-right: 6%;
+    padding-top: 5%;
 }
 
 .cartemada:hover {
     transform: scale(1.6);
 }
+
 .gallery {
     text-align: center;
     padding: 20px;
 }
+
 .gallery h2 {
     font-size: 2em;
     margin-bottom: 20px;
@@ -166,4 +180,36 @@ footer p {
 .circular-img:hover {
     transform: scale(1.8) rotate(360deg);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.titre {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    color: #ffffff;
+    padding-left: 2%;
+}
+
+h2 {
+    font-family: "Lobster Two", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #516375;
+}
+
+.pages {
+    background-color: #516375;
+}
+
+.contact-page {
+
+
+    padding-left: 2%;
+    color: #516375;
+}
+
+.retour{
+    padding-left: 1%;
+    padding-top: 5%;
 }
