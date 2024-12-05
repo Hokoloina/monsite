@@ -5,6 +5,7 @@ body {
     background-color: white;
     position: relative;
     margin: 0;
+    overflow: hidden;
 }
 
 body::before {
@@ -124,6 +125,7 @@ footer p {
     justify-content: space-between;
     padding: 20px;
     flex-wrap: wrap;
+
 }
 
 .intro p {
@@ -136,6 +138,9 @@ footer p {
     justify-content: left;
     max-width: 50%;
     line-height: 1.6;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 10px 10px 5px rgb(133, 130, 130);
 }
 
 .cartemada {
@@ -145,7 +150,9 @@ footer p {
     transition: transform 0.3s ease;
     padding-right: 6%;
     padding-top: 5%;
+  
 }
+
 
 .cartemada:hover {
     transform: scale(1.6);
