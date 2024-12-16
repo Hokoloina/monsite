@@ -18,18 +18,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-        <script src="https://kit.fontawesome.com/8766e65cde.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8766e65cde.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <h1 class="lobster-two-bold">Bienvenue à <span class="mada">Mada</span><span class="gascar">gascar</span></h1>
-        <nav>
-            <ul>
-                <li><a href="lieux-incontournables.html" class="button">Lieux Incontournables</a></li>
-                <li><a href="aventures-et-activites.html" class="button">Activités et aventures</a></li>
-                <li><a href="a-propos.html" class="button">À Propos</a></li>
-                <li><a href="contact.html" title="Contactez-nous"><span class="fa-solid fa-envelope fa-2xl"></span></a></li>
+        <nav class="menuprincipalliste">
+            <input type="checkbox" id="hamburger-toggle" class="hamburger-checkbox">
+            <label for="hamburger-toggle" class="hamburger">&#9776;</label>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a href="lieux-incontournables.html" class="lienmenu">Lieux Incontournables</a>
+                        <ul class="submenu">
+                            <li class="submenu_item"> <a href="àcompleterplustard"> Au Nord Est/Ouest</a>
+                                <ul class="sub_submenu">
+                                    <li>Nosy Be</li>
+                                    <li> Diego Suarez</li>
+                                    <li>Sainte Marie</li>
+                                </ul>
+                            </li>
+                            <li class="submenu_item"> <a href="àcompleterplustard"> Au Centre</a>
+                                <ul class="sub_submenu">
+                                    <li class="interieurmenu2">Antananarivo</li>
+                                    <li> Ampefy</li>
+                                    <li>Antsirabe</li>
+                                    <li>Fianarantsoa</li>
+                                </ul>
+                            </li>
+                            <li class="submenu_item"> <a href="àcompleterplustard"> Au Sud (Est/Ouest)</a>
+                                <ul class="sub_submenu">
+                                    <li class="interieurmenu2">Isalo</li>
+                                    <li> Tuléar</li>
+                                    <li>Anakao</li>
+                                    <li>Morondava</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                <li class="menu-item"><a href="ausujet.html" class="lienmenu">Le Sujet</a></li>
+                <li class="menu-item"><a href="a-propos.html" class="lienmenu">À Propos</a></li>
+                <li class="menu-item"><a href="contact.html" title="Contactez-nous" class="lienmenu"><span class="fa-solid fa-envelope fa-2xl"></span></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -45,7 +75,7 @@
             <div class="images-container">
                 <a href="lieux-incontournables.html" class="image-link"><img src="nosybe.avif" alt="Paysage 1"
                         class="circular-img"></a>
-                <a href="aventures-et-activites.html" class="image-link"><img src="baobab.jpg" alt="Paysage 3"
+                <a href="ausujet.html" class="image-link"><img src="baobab.jpg" alt="Paysage 3"
                         class="circular-img"></a>
             </div>
         </section>

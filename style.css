@@ -5,7 +5,7 @@ body {
     background-color: white;
     position: relative;
     margin: 0;
-    overflow: hidden;
+    
 }
 
 body::before {
@@ -23,16 +23,32 @@ body::before {
     z-index: -1;
 }
 
+
+/* Style général du header */
 header {
-    padding: 0;
+    padding: 10px 20px;
     margin: 0;
     background-color: #ffffff;
     color: #516375;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
 
+}
+
+/* Style du titre */
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    padding-bottom: 4px;
+    font-family: "Lobster Two", cursive;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .mada {
@@ -41,6 +57,152 @@ header {
 
 .gascar {
     color: #008d15;
+}
+
+/* Menu principal */
+.menuprincipalliste {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    flex-direction: row; /* Menu horizontal */
+}
+
+
+/* Style des liens */
+.lienmenu {
+    color: #516375;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 15px;
+    display: inline-block;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+/* Effet au survol */
+.lienmenu:hover {
+    text-decoration: underline;
+    color: #c7cdde;
+}
+
+/* Sous-menus */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #516375;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 0 0 8px 8px;
+    z-index: 10;
+}
+/* Affichage des sous-menus au survol */
+.menu-item:hover > .submenu {
+    display: block;
+}
+
+.submenu-item {
+    position: relative;
+}
+
+.submenu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+}
+
+.submenu li a:hover {
+    color: #aab1c3;
+}
+
+/* Sous-sous-menus */
+.sub-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #ffffff;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 0 8px 8px 0;
+    z-index: 10;
+}
+
+.sub-submenu li a {
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    padding: 5px 20px;
+    display: block;
+}
+
+.sub-submenu li a:hover {
+    color: #f4a261;
+}
+
+/* Affichage des sous-menus au survol */
+
+.submenu-item:hover > .sub-submenu {
+    display: block;
+}
+
+/* Menu Hamburger */
+.hamburger {
+    display: none; /* Masqué sur grand écran */
+    font-size: 2em;
+    cursor: pointer;
+    color: #516375;
+    position: relative;
+    z-index: 20;
+    padding: 10px;
+}
+
+.hamburger-checkbox {
+    display: none; /* Masquer complètement le checkbox */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        font-size: 2em;
+        color: #516375;
+        cursor: pointer;
+    }
+
+    .menu {
+        flex-direction: column;
+        display: none;
+        background-color: #516375;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .hamburger-checkbox:checked ~ .menu {
+        display: flex;
+    }
+
+    .submenu,
+    .sub-submenu {
+        position: relative;
+        display: none; /* Masqué par défaut */
+    }
+
+    .menu-item:hover .submenu {
+        display: block;
+    }
 }
 
 .lobster-two-bold {
@@ -56,7 +218,7 @@ nav {
     padding-right: 5%;
 }
 
-nav ul {
+/*nav ul {
     display: flex;
     list-style: none;
     padding: 0;
@@ -69,11 +231,11 @@ ul li a {
     text-decoration: none;
     transition: 0.3s;
 }
-
-nav ul li:last-child a:hover {
-    color: rgb(134, 155, 167);
+*/
+/*nav ul li:last-child a:hover {
+    color: rgb(167, 144, 134);
 }
-
+*/
 .button {
     color: white;
     text-decoration: none;
@@ -221,3 +383,162 @@ h2 {
     padding-top: 5%;
 }
 
+main{
+    overflow: hidden;
+}
+
+/* Page À Propos */
+.about-page {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.introduction {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.introduction-text h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.introduction-text .highlight {
+    color: #fc0000;
+}
+
+.introduction-text p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.story, .values, .dream {
+    margin-top: 30px;
+}
+
+.story h2, .values h2, .dream h2 {
+    font-size: 1.8em;
+    color: #516375;
+    margin-bottom: 10px;
+}
+
+.story p, .values p, .dream p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    color: #777;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+}
+
+/* Page Le Sujet */
+.subject-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction */
+.introsujet {
+    margin-bottom: 30px;
+}
+
+.introsujet h2 {
+    font-size: 1.8em;
+    color: #516375;
+    margin-bottom: 10px;
+}
+
+.introsujet p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Exploration du contenu */
+.explore-content {
+    margin-bottom: 30px;
+}
+
+.explore-content h2 {
+    font-size: 1.8em;
+    color: #516375;
+    margin-bottom: 20px;
+}
+
+.explore-content p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Invitation */
+.invitation {
+    text-align: center;
+    background-color: #516375;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.invitation h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.invitation p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.explore-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fd0000;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #b30000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #f4f4f4;
+    color: #777;
+    font-size: 0.9em;
+    border-top: 1px solid #ddd;
+}
