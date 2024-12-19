@@ -531,7 +531,7 @@ footer {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #fd0000;
+    background-color:#2f91c6;
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -540,7 +540,7 @@ footer {
 }
 
 .explore-button:hover {
-    background-color: #b30000;
+    background-color:#165062;
 }
 
 /* Footer */
