@@ -553,13 +553,6 @@ footer {
     border-top: 1px solid #ddd;
 }
 
-
-/*au nord*/
-header .page-title {
-    font-size: 2.5em;
-    margin: 0;
-}
-
 /* Page des galeries */
 .gallery-page {
     max-width: 1200px;
